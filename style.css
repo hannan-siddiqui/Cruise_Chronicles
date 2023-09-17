@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* slider  */
+/* ================= */
+* {
+    box-sizing: border-box;
+    font-family: Tahoma, Arial;
+    padding: 0px;
+    margin: 0px;
+}
+.slider-image img{
+    width: 720px;
+    
+}
+.slider-container {
+    width: 720px;
+    margin: auto;
+    position: relative;
+}
+
+.slider-container .fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.slider-container .slides .slider-numbers {
+    position: absolute;
+    padding: 15px;
+    font-size: 15px;
+    color: #FFF
+}
+
+.slider-container .slides .slider-caption {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    color: #FFF;
+    padding: 10px;
+}
+
+.slider-container .prev,
+.slider-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.slider-container .next {
+    right: 0px;
+}
+
+.slider-container .prev:hover{
+    background: rgba(0, 0, 0, 0.6);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+.slider-container .next:hover {
+    background: rgba(0, 0, 0, 0.6);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+}
+
+.slider-container .slider-bullets {
+    text-align: center;
+}
+
+.slider-container .slider-bullets .dots {
+    display: inline-block;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #808080;
+    border-radius: 50%;
+}
+
+.slider-container .slider-bullets .dots:hover {
+    background-color: #383838;
+    cursor: pointer;
+}
+
+.slider-container .slider-bullets .active {
+    background-color: #383838;
+}
+
+.navbutton{
+    display: none;
+}
+.navbar{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    background-position: left;
+    background-size: cover;
+}
+.frontimg img{
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav{
+    background-color: rgb(87, 90, 90);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10px 0 0;
+    margin-right: 10px;
+}
+
+.logo{
+    color: bisque;
+    font-size: 28px;
+    font-weight: bolder;
+    border: 2px solid rgb(246, 0, 0);
+    padding: 7px;
+    border-radius: 20px;
+}
+
+
+span{
+    color: red;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: bisque;
+    font-weight: bold;
+    transition: 0.4s ease;
+    
+}
+nav ul li a:hover{
+    color: red;
+}
+
+button{
+    border: none;
+    background: red;
+    padding: 10px 11px;
+    border-radius: 30px;
+    color: bisque;
+    font-weight: bolder;
+    transition: 0.3s ease;
+
+}
+button:hover{
+    transform: scale(1.06);
+    background-color: bisque;
+    color: red;
+}
+
+.landingpagecontent{
+
+    margin: 29px 10px 10px 10px;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(114, 114, 114);
+}
+
+.carimg img{
+    width: 50vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.cartxt{
+    
+    padding-top: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    color: antiquewhite;
+    font-style: oblique
+    
+    
+}
+.cartxt h1{
+    border : solid red 5px;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 70%;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 19px;
+    transition: 0.5 ease;
+    color: rgb(51, 1, 26); 
+}
+
+
+.brand-container{
+    margin-top:20px ;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.brand-container .brand-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    display: flex;
+    overflow: hidden;
+}
+.brand-box{
+    position: relative;
+}
+.brand-layer h4{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    border:2px solid bisque;
+    padding: 3px 5px 3px 5px;
+    border-radius: 10px;
+    color: red;
+    background-color: black;
+}
+
+.brand-box img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+.brand-box:hover img{
+    transform: scale(1.1);
+    
+}
+
+.brand-box .brand-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    /* transform: translateY(100%); */
+    transition: 0.5s ease;
+}
+
+.contact h2{
+    margin-bottom: 10px;
+}
+
+.contact form{
+    max-width: 70vw;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 4%;
+    font-size: large;
+    color: red;
+    background: bisque;
+    border-radius: 10px;
+    margin: 2px 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+
+
+
+.menu{
+    display: none;
+    color: red; 
+       
+}
+@media(max-width : 768px){
+    .menu{
+        display: block;
+
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+
+    .brand-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .landingpagecontent{
+        flex-direction: column;
+    }
+    .carimg img{
+        width: 70vw;
+        padding-top: 20px;
+    }
+    .cartxt{
+        padding-bottom: 20px;
+        width: 80vw;
+    }
+}
+
+@media(max-width:617px){
+    .brand-container{
+        grid-template-columns: 1fr;
+    }
+
+}
