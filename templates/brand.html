@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brands</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/nav.css">
+    <link rel="stylesheet" href="/static/footer.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    
+</head>
+<body>
+     <!--================ navbar -->
+      <!--================ navbar -->
+      <header>
+        <nav class="navbar">
+          <a href="{% url "home" %}" class="logo">Cruise Chronicles</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="{% url "home" %}" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url "brand" %}" class="nav-link">Brand</a>
+            </li>
+            {% comment %} <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li> {% endcomment %}
+            <li class="nav-item">
+              <a href="{% url "contact" %}" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+      <div class="frontimg">
+        <img src="/static/images/astonmartin.jpg" alt="">
+    </div>
+
+    <h2 style="text-align: center; color: red; margin-top: 20px;"> Brands </h2>
+    <div class="brand-container">
+            
+        <a href="{% url "brandkoenigsigg" %}"><div class="brand-box">
+            <img src="/static/images/Koenigsegg-CC850 5.jpg" class="brand-image">
+
+            <div class="brand-layer">
+                <h4>Koenegsigg</h4>
+            </div>
+        </div>
+        </a>
+
+        <a href="brandkoenegsigg.html"><div class="brand-box">
+            <img src="/static/images/Koenigsegg-CC850 5.jpg" class="brand-image">
+
+            <div class="brand-layer">
+                <h4>Koenegsigg</h4>
+            </div>
+        </div>
+        </a>
+
+        <a href="brandkoenegsigg.html"><div class="brand-box">
+            <img src="/static/images/Koenigsegg-CC850 5.jpg" class="brand-image">
+
+            <div class="brand-layer">
+                <h4>Koenegsigg</h4>
+            </div>
+        </div>
+        </a>
+        <a href="brandkoenegsigg.html"><div class="brand-box">
+            <img src="/static/images/Koenigsegg-CC850 5.jpg" class="brand-image">
+
+            <div class="brand-layer">
+                <h4>Koenegsigg</h4>
+            </div>
+        </div>
+        </a>
+        <a href="brandkoenegsigg.html"><div class="brand-box">
+            <img src="/static/images/Koenigsegg-CC850 5.jpg" class="brand-image">
+
+            <div class="brand-layer">
+                <h4>Koenegsigg</h4>
+            </div>
+        </div>
+        </a>
+
+
+    </div>
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Cruise<span>Chronicles</span></h3>
+
+				<p class="footer-links">
+					<a href="{% url "home" %}" class="link-1">Home</a>
+					
+					<a href="{% url "brand" %}">Blog</a>
+				
+					{% comment %} <a href="#">Pricing</a>
+				
+					<a href="#">About</a>
+					
+					<a href="#">Faq</a> {% endcomment %}
+					
+					<a href="{% url "contact" %}">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Cruise Chronicles © 2023</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>420 Darth Vader</span> Planet C-53</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 -----------------</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="#">email at : cruisechronicle@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About me</span>
+                    <strong>just a car enthusiast</strong>
+					 
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"><box-icon name='facebook-square' type='logo' color='#d01919' ></box-icon></i></a>
+          <a href="#"><i class="fa fa-facebook"><box-icon name='instagram' type='logo' color='#d01919' ></box-icon></a>
+					<a href="#"><i class="fa fa-twitter"><box-icon name='twitter' type='logo' color='#d01919' ></box-icon></i></a>
+					<a href="#"><i class="fa fa-linkedin"><box-icon name='linkedin-square' type='logo' color='#d01919' ></box-icon></i></a>
+					<a href="#"><i class="fa fa-github"><box-icon name='github' type='logo' color='#d01919' ></box-icon></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

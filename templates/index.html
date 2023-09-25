@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruise Chronicle</title>
+    <link rel="stylesheet" href="/static/nav.css">
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/footer.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <!--================ navbar -->
+     <!--================ navbar -->
+
+     <header>
+        <nav class="navbar">
+          <a href="{% url "home" %}" class="logo">Cruise Chronicles</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="{% url "home" %}" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url "brand" %}" class="nav-link">Brand</a>
+            </li>
+            {% comment %} <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li> {% endcomment %}
+            <li class="nav-item">
+              <a href="{% url "contact" %}" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+
+    <div class="frontimg">
+        <img src="/static/images/kc23.png" alt="">
+            <div class="frontimgtext">
+                <a href="#">THE KC23: <br> UNIQUELY SPECIAL</a>
+            </div>
+    </div>
+        
+   
+
+    <!-- Landing page Slider -->
+     <!-- Landing page Slider -->
+
+    <div class="slider-container">
+
+        <div class="slides fade">
+            <div class="slider-image"><img src="/static/mercedes.jpg" alt="background_1"></div>
+        </div> 
+        <!-- slider -->
+    
+        <div class="slides fade">
+            <div class="slider-image"><img src="/static/images/Koenigsegg-CC850 5.jpg" alt="background_2"></div>
+        </div> <!-- slider -->
+    
+        <div class="slides fade">
+            <div class="slider-image"><img src="/static/images/slideimg3.jpg" alt="background_3"></div>
+        </div> <!-- slider -->
+    
+        <div class="slides fade">
+            <div class="slider-image"><img src="/static/images/slideimg1.png" alt="background_4"></div>
+        </div> <!-- slider -->
+    
+        <!-- Slider Next and Previous buttons -->
+        <a class="prev" onclick="plusIndex(-1)">❮</a>
+        <a class="next" onclick="plusIndex(+1)">❯</a>
+    
+        <!-- Slider Selection Bullets -->
+        <div class="slider-bullets" id="slider-bullets">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
+        </div> 
+    
+    
+    </div>
+
+    <!-- =========landing page contents================ -->
+ 
+    
+    <div class="landingpagecontent">
+        
+        <div class="carimg">
+            <img src="/static/images/Koenigsegg-CC850 5.jpg" alt="">
+        </div>
+        <div class="cartxt">
+            <h1>koenegsegg</h1>
+            <h3>Delivering on. A singular. Vision ... to follow his dream and build the world's greatest sports car. Koenigsegg Automotive is born. Koenigsegg has set a new world record for a production car, setting a 0-400-0 kmph run in 28.81 seconds. Koenigsegg is back at it, smashing world records for acceleration and braking.
+        
+            <h2 style="color: red;">the show must go on...</h2>.</h3>
+        </div>
+
+    </div>   
+    
+    <div class="landingpagecontent">
+        
+        <div class="cartxt">
+            <h1>Mercedes</h1>
+            <h3>Mercedes, a symbol of automotive excellence, represents the pinnacle of luxury, performance, and engineering precision. Renowned for its timeless elegance and cutting-edge innovations, Mercedes-Benz has consistently redefined the driving experience. From iconic sedans to powerful SUVs and luxurious coupes, each vehicle embodies a legacy of unparalleled craftsmanship and sophistication.</h3>
+        </div>
+        <div class="carimg">
+            <img src="/static/mercedes.jpg" alt="">
+        </div>
+
+    </div>
+
+    {% for n in landingpagedata %}
+    <div class="landingpagecontent">
+        
+        <div class="cartxt">
+            <h1>{{n.imageheading}}</h1>
+            <h3>{{n.imagedex}}</h3>
+        </div>
+        <div class="carimg">
+            <img src="/media/{{n.img}}">
+        </div>
+
+    </div>
+    {% endfor %}
+
+    <div class="landingpagehumanimage">
+        <div class="humanimg">
+            <img src="/static/images/sul.jpeg" alt"">
+        </div>
+        <div class="humantxt">
+            <h2>"If you are not scared, then you are not driving fast enough." -Ken Block.</h2>
+            <br>
+            <p>"In the world of car enthusiasts, passion knows no bounds. It's not just about steel and rubber, but a love affair with freedom and expression. 'Cars are dreams in motion,' they say, eyes gleaming with fervor. With every twist of the wheel, they weave stories of adventure and triumph. The scent of gasoline is their perfume, and the purr of a finely-tuned engine, their sweetest serenade. In each car, they find a confidant, a trusted companion for the journey ahead. It's not just a hobby; it's a way of life, an indelible love for all things automotive."</p>
+        </div>
+    </div>
+
+    </div>
+
+    
+    
+    {% comment %} <section>Footer Example 4</section> {% endcomment %}
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Cruise<span>Chronicles</span></h3>
+
+				<p class="footer-links">
+					<a href="{% url "home" %}" class="link-1">Home</a>
+					
+					<a href="{% url "brand" %}">Blog</a>
+				
+					{% comment %} <a href="#">Pricing</a>
+				
+					<a href="#">About</a>
+					
+					<a href="#">Faq</a> {% endcomment %}
+					
+					<a href="{% url "contact" %}">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Cruise Chronicles © 2023</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>420 Darth Vader</span> Planet C-53</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 -----------------</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="#">cruisechronicle@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About me</span>
+                    <strong>just a car enthusiast</strong>
+					 
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"><box-icon name='facebook-square' type='logo' color='#d01919' ></box-icon></i></a>
+                    <a href="#"><i class="fa fa-facebook"><box-icon name='instagram' type='logo' color='#d01919' ></box-icon></a>
+					<a href="#"><i class="fa fa-twitter"><box-icon name='twitter' type='logo' color='#d01919' ></box-icon></i></a>
+					<a href="#"><i class="fa fa-linkedin"><box-icon name='linkedin-square' type='logo' color='#d01919' ></box-icon></i></a>
+					<a href="#"><i class="fa fa-github"><box-icon name='github' type='logo' color='#d01919' ></box-icon></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

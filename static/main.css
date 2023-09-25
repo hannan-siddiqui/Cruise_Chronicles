@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* slider  */
+/* ================= */
+
+.slider-container {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    /* padding-left: 14px; */
+    /* padding-right: 10px;  */
+    width: 97vw;
+    /* margin: auto; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    position: relative;
+}
+
+.slider-container .fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+/* image === */
+
+
+
+/* @keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+} */
+
+.slides .slider-image img{
+    width: 97vw;
+    /* height: 97vw; */
+    /* ======== */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+}
+
+.slider-container .prev,
+.slider-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff0000;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* .prev, .next{
+    color: #e20909;
+    font-weight: bolder;
+} */
+
+.slider-container .next {
+    color: red;
+    right: 0px;
+}
+
+.slider-container .prev:hover{
+    background: rgba(239, 0, 0, 0.6);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+.slider-container .next:hover {
+    background: rgba(236, 4, 4, 0.6);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+}
+
+.slider-container .slider-bullets {
+    color: red;
+    text-align: center;
+}
+
+.slider-container .slider-bullets .dots {
+    color: red;
+    display: inline-block;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #e30c0c;
+    border-radius: 50%;
+}
+
+.slider-container .slider-bullets .dots:hover {
+    background-color: #383838;
+    cursor: pointer;
+}
+
+.slider-container .slider-bullets .active {
+    background-color: #383838;
+}
+
+
+
+.frontimg img{
+    width: 100%;
+    
+}
+.frontimg{
+    text-align: center;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.frontimgtext{
+    text-decoration: none;
+    text-decoration: double;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.frontimgtext a{
+    color: red;
+}
+
+button{
+    border: none;
+    background: red;
+    padding: 10px 11px;
+    border-radius: 30px;
+    color: bisque;
+    font-weight: bolder;
+    transition: 0.3s ease;
+
+}
+button:hover{
+    transform: scale(1.06);
+    background-color: bisque;
+    color: red;
+}
+
+.landingpagecontent{
+
+    margin: 29px 10px 10px 10px;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(114, 114, 114);
+}
+
+.carimg img{
+    width: 50vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.cartxt{
+    
+    padding-top: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    color: rgb(0, 0, 0);
+    font-style: oblique
+    
+    
+}
+.cartxt h1{
+    border : solid red 5px;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 70%;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 19px;
+    transition: 0.5 ease;
+    color: rgb(51, 1, 26); 
+}
+
+/* landingpagehumanimage */
+
+.landingpagehumanimage{
+    margin: 29px 10px 10px 10px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b6060;
+    
+}
+
+.humanimg img{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.humanimg{
+    padding-top: 40px;
+    width: 40vw;
+    padding-right: 40px;
+    margin-right: 100px;
+    
+}
+
+.humantxt{
+    margin: 60px;
+    /* height: 70vh; */
+    color: white;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    border: #000000 10px solid;
+    width: 30vw;
+    padding-top: 70px;
+}
+
+.brand-container{
+    margin-top:20px ;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 20px;
+    transition: 10s ease;
+    margin-bottom: 20px;
+}
+
+.brand-container .brand-box{
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 15px red;
+    display: flex;
+    overflow: hidden;
+
+    
+}
+
+.brand-container :hover{
+    box-shadow: none;
+}
+.brand-box{
+    position: relative;
+}
+.brand-layer h4{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    border:2px solid bisque;
+    padding: 3px 5px 3px 5px;
+    border-radius: 10px;
+    color: red;
+    background-color: black;
+}
+
+.brand-box img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+.brand-box:hover img{
+    transform: scale(1.5);
+    
+}
+/* login btn */
+
+.brand-box .brand-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+
+}
+
+
+.contact h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact form{
+    max-width: 70vw;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 4%;
+    font-size: large;
+    color: red;
+    background: rgb(208, 181, 148);
+    border-radius: 10px;
+    margin: 2px 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+
+}
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    text-emphasis: bolder;
+    color: red;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+
+
+
+@media(max-width : 768px){
+    
+
+    .brand-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .landingpagecontent{
+        flex-direction: column;
+    }
+    .carimg img{
+        width: 70vw;
+        padding-top: 20px;
+    }
+    .cartxt{
+        padding-bottom: 20px;
+        width: 80vw;
+    }
+    .landingpagehumanimage{
+        flex-direction: column;
+    }
+    .humanimg img{
+        width: 70vw;
+        padding-top: 20px;
+    }
+    .humantxt{
+        padding-bottom: 20px;
+        width: 80vw;
+    }
+   
+}
+
+@media(max-width:617px){
+    .brand-container{
+        grid-template-columns: 1fr;
+    }
+    .frontimgtext{
+        font-size: 0.7rem;
+    }
+
+}

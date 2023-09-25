@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/nav.css">
+    <link rel="stylesheet" href="/static/footer.css">
+    <link rel="stylesheet" href="/static/contact.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar">
+          <a href="{% url "home" %}" class="logo">Cruise Chronicles</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="{% url "home" %}" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url "brand" %}" class="nav-link">Brand</a>
+            </li>
+            {% comment %} <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li> {% endcomment %}
+            <li class="nav-item">
+              <a href="{% url "contact" %}" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+
+
+
+
+
+      <h1 style=" color: red ;">Contact us...</h1>
+<div class="wpcf7" id="wpcf7-f156-p143-o1 formwrap">
+    <form action="/?page_id=143#wpcf7-f156-p143-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+        <div style="display: none;">
+            <input type="hidden" name="_wpcf7" value="156">
+            <input type="hidden" name="_wpcf7_version" value="3.7.2">
+            <input type="hidden" name="_wpcf7_locale" value="en_US">
+            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f156-p143-o1">
+            <input type="hidden" name="_wpnonce" value="d1da331d93">
+        </div>
+        <p>
+           <span class="wpcf7-form-control-wrap Name">
+             <input type="text" name="Name" value="" size="40" class="nameinput wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name">
+          </span>
+          <span class="wpcf7-form-control-wrap Email">
+            <input type="email" name="Email"  size="40" class="emailinput wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email">
+          </span>
+          {% comment %} <span class="wpcf7-form-control-wrap Subject flat">
+            <select name="Subject" class="indent wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+              <option value="General">General</option>
+              <option value="Booking">Booking</option>
+            </select>
+          </span> {% endcomment %}
+          <span class="wpcf7-form-control-wrap Message">
+            <textarea name="Message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea>
+          </span>
+          <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit btn">
+          <img class="ajax-loader" src="http://www.jordancundiff.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;">
+      </p>
+      <div class="wpcf7-response-output wpcf7-display-none">
+      </div>
+  </form>
+</div>
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <h3>Cruise<span>Chronicles</span></h3>
+
+    <p class="footer-links">
+      <a href="{% url "home" %}" class="link-1">Home</a>
+      
+      <a href="{% url "brand" %}">Blog</a>
+    
+      {% comment %} <a href="#">Pricing</a>
+    
+      <a href="#">About</a>
+      
+      <a href="#">Faq</a> {% endcomment %}
+      
+      <a href="{% url "contact" %}">Contact</a>
+    </p>
+
+    <p class="footer-company-name">Cruise Chronicles © 2023</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>420 Darth Vader</span> Planet C-53</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+91 -----------------</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="#">cruisechronicle@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About me</span>
+                <strong>just a car enthusiast</strong>
+       
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fa fa-facebook"><box-icon name='facebook-square' type='logo' color='#d01919' ></box-icon></i></a>
+                <a href="#"><i class="fa fa-facebook"><box-icon name='instagram' type='logo' color='#d01919' ></box-icon></a>
+      <a href="#"><i class="fa fa-twitter"><box-icon name='twitter' type='logo' color='#d01919' ></box-icon></i></a>
+      <a href="#"><i class="fa fa-linkedin"><box-icon name='linkedin-square' type='logo' color='#d01919' ></box-icon></i></a>
+      <a href="#"><i class="fa fa-github"><box-icon name='github' type='logo' color='#d01919' ></box-icon></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
