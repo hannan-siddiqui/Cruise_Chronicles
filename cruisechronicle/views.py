@@ -14,7 +14,11 @@ def homepage(request):
 
 
 def brand(request):
-    return render(request, "brand.html")
+     branddata = brandpagecontent.objects.all()
+    branddata = {
+        'branddata':branddata,
+    }
+    return render(request, "brand.html", branddata)
 
 
 def contact(request):
