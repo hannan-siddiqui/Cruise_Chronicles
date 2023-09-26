@@ -1,5 +1,6 @@
 from django.contrib import admin
 from manager.models import landingpagecontent
+from manages.models import brandpagecontent
 
 # Register your models here.
 
